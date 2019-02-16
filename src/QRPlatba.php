@@ -130,19 +130,21 @@ class QRPlatba
         return new self($account, $amount, $variable);
     }
 
-    /**
-     * Nastavení čísla účtu ve formátu 12-3456789012/0100.
-     *
-     * @param $account
-     *
-     * @return $this
-     */
-    public function setAccount($account)
-    {
-        $this->keys['ACC'] = self::accountToIban($account);
 
-        return $this;
-    }
+	/**
+	 * Nastavení čísla účtu ve formátu IBAN.
+	 *
+	 * @param $iban
+	 *
+	 * @return $this
+	 */
+	public function setIban($iban)
+	{
+		$this->keys['ACC'] = $iban;
+
+		return $this;
+	}
+
 
     /**
      * Nastavení částky.
