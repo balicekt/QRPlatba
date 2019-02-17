@@ -25,7 +25,7 @@ Podporuje PHP 5.6 až 7.2.
 
 ## Instalace pomocí Composeru
 
-`composer require dfridrich/qr-platba`
+`composer require balicekt/qr-platba`
 
 ## Příklad
 
