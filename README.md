@@ -38,7 +38,7 @@ use Defr\QRPlatba\QRPlatba;
 
 $qrPlatba = new QRPlatba();
 
-$qrPlatba->setAccount('12-3456789012/0100')
+$qrPlatba->setIban('CZ3220100000002301383198')
     ->setVariableSymbol('2016001234')
     ->setMessage('Toto je první QR platba.')
     ->setSpecificSymbol('0308')
