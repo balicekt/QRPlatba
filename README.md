@@ -21,7 +21,7 @@ QRPlatbu v současné době podporují tyto banky:
 Air Bank, Česká spořitelna, ČSOB, Equa bank, Era, Fio banka, Komerční banka, mBank, Raiffeisenbank, ZUNO.
 
 
-Podporuje PHP 5.6 až 7.2.
+Podporuje PHP 7.0. a vyšší
 
 ## Instalace pomocí Composeru
 
@@ -51,13 +51,6 @@ echo $qrPlatba->getQRCodeImage(); // Zobrazí <img> tag s kódem, viz níže
 
 ![Ukázka](qrcode.png)
 
-Lze použít i jednodušší zápis:
-
-```php
-echo QRPlatba::create('12-3456789012/0100', 987.60)
-    ->setMessage('QR platba je parádní!')
-    ->getQRCodeImage();
-```
 
 ### Další možnosti
 
